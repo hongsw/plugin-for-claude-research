@@ -35,12 +35,28 @@ This plugin transforms how you approach research:
 
 ---
 
+## Installation
+
+### Add Marketplace & Install Plugin
+
+```bash
+# Add this marketplace to Claude Code
+/plugin marketplace add hongsw/plugin-for-claude-research
+
+# Install the domain-research plugin
+/plugin install domain-research
+```
+
+That's it! The plugin is now ready to use.
+
+---
+
 ## Quick Start
 
 ### 1. Start a Research Conversation
 
 ```bash
-claude --skill domain-research
+claude
 ```
 
 ```
@@ -77,27 +93,25 @@ Once context is established:
 ```
 plugin-for-claude-research/
 ├── .claude-plugin/
-│   ├── plugin.json              # Plugin metadata
-│   └── marketplace.json         # Registry configuration
-├── skills/
-│   └── domain-research/
-│       ├── SKILL.md             # Core methodology
-│       ├── .mcp.json            # MCP server configuration
-│       └── prompts/
-│           ├── intent-analyzer.md       # Conversational discovery
-│           ├── key-questions.md         # Step 1: Key questions
-│           ├── research-gaps.md         # Step 2: Gap identification
-│           ├── insight-extraction.md    # Step 3: Source analysis
-│           ├── multi-source-synthesis.md # Step 4: Integration
-│           ├── practical-application.md  # Step 5: Action planning
-│           └── comprehensive-guide.md    # Final roadmap
-├── templates/
-│   ├── field-definition.yaml    # Optional structured input
-│   └── topic-definition.yaml    # Optional structured input
+│   ├── plugin.json              # Marketplace metadata
+│   └── marketplace.json         # Plugin registry
+├── plugins/
+│   └── domain-research/         # Main plugin
+│       ├── .claude-plugin/
+│       │   └── plugin.json      # Plugin config
+│       ├── bin/
+│       │   └── install.js       # Installation script
+│       ├── skills/
+│       │   └── domain-research/
+│       │       ├── SKILL.md     # Core methodology
+│       │       └── prompts/     # Research prompts
+│       ├── package.json
+│       └── README.md
 ├── examples/
 │   ├── manufacturing-ai-2026/   # Manufacturing example
 │   ├── healthcare-scheduling/   # Healthcare example
 │   └── fintech-blockchain/      # FinTech example
+├── templates/                   # Optional input templates
 └── README.md
 ```
 

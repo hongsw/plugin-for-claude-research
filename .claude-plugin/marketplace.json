@@ -1,12 +1,15 @@
 {
+  "name": "plugin-for-claude-research",
+  "owner": {
+    "name": "hongsw",
+    "url": "https://github.com/hongsw"
+  },
+  "description": "Universal research framework for Claude Code - conversational intent analysis to structured research pipeline",
   "plugins": [
     {
-      "name": "claude-research-framework",
-      "path": "skills/domain-research",
-      "description": "Universal 5-step research pipeline with conversational intent analysis - works for any field from Manufacturing AI to Healthcare to Finance",
-      "category": "research",
-      "featured": true,
-      "tags": ["research", "analysis", "universal", "intent-analysis"]
+      "name": "domain-research",
+      "description": "Universal 5-step research pipeline with conversational intent analysis - works for any field",
+      "source": "./plugins/domain-research"
     }
   ]
 }

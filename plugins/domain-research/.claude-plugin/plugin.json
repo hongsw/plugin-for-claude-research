@@ -1,7 +1,7 @@
 {
-  "name": "plugin-for-claude-research",
+  "name": "domain-research",
   "version": "1.0.0",
-  "description": "Universal research framework for Claude Code - conversational intent analysis to structured research pipeline",
+  "description": "Universal research framework with conversational intent analysis - works for any field",
   "author": {
     "name": "hongsw",
     "url": "https://github.com/hongsw"
@@ -12,7 +12,7 @@
     "claude-code",
     "research",
     "intent-analysis",
-    "domain-agnostic",
-    "plugin"
-  ]
+    "domain-agnostic"
+  ],
+  "skills": "./skills/domain-research"
 }

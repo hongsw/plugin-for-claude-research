@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "webSearch": {
+      "enabled": true,
+      "purpose": "Real-time paper and trend search",
+      "triggers": [
+        "step_1_trend_analysis",
+        "step_2_gap_validation",
+        "source_discovery"
+      ],
+      "queryTemplates": {
+        "academic": "{field} {topic} research paper 2024 2025 2026",
+        "industry": "{field} {topic} industry report case study",
+        "trends": "{field} {topic} emerging trends forecast"
+      }
+    },
+    "sequential": {
+      "enabled": true,
+      "purpose": "Complex multi-step analysis",
+      "triggers": [
+        "step_4_synthesis",
+        "step_5_action_planning",
+        "cross_source_analysis"
+      ],
+      "thinkingDepth": {
+        "step_3": "standard",
+        "step_4": "deep",
+        "step_5": "comprehensive"
+      }
+    }
+  },
+  "fallbackBehavior": {
+    "webSearchUnavailable": "Use cached knowledge with explicit date limitations",
+    "sequentialUnavailable": "Use standard reasoning with explicit step documentation"
+  }
+}

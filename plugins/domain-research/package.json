@@ -1,0 +1,24 @@
+{
+  "name": "@hongsw/domain-research",
+  "version": "1.0.0",
+  "description": "Universal research framework with conversational intent analysis for Claude Code",
+  "author": "hongsw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongsw/plugin-for-claude-research.git"
+  },
+  "bin": {
+    "domain-research": "./bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/"
+  ],
+  "keywords": [
+    "claude-code",
+    "plugin",
+    "research",
+    "intent-analysis"
+  ]
+}
