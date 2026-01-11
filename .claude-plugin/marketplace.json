@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "name": "claude-research-framework",
+      "path": "skills/domain-research",
+      "description": "Universal 5-step research pipeline with conversational intent analysis - works for any field from Manufacturing AI to Healthcare to Finance",
+      "category": "research",
+      "featured": true,
+      "tags": ["research", "analysis", "universal", "intent-analysis"]
+    }
+  ]
+}

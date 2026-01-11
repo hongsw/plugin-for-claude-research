@@ -1,0 +1,178 @@
+# Topic Definition Template
+# Use this template to define the specific research goal/problem
+
+topic:
+  # Goal statement (what you want to achieve)
+  goal_statement: ""
+
+  # Scope boundaries
+  scope:
+    included:
+      - ""
+    excluded:
+      - ""
+
+  # Target timeline
+  timeline:
+    target_completion: ""  # e.g., "2026-12-31"
+    milestones:
+      - date: ""
+        description: ""
+
+  # Available resources
+  resources:
+    expertise:
+      - ""
+    infrastructure:
+      - ""
+    budget_range: ""  # e.g., "Medium ($50K-$200K)"
+
+  # Technical prerequisites
+  prerequisites:
+    systems:
+      - ""
+    knowledge:
+      - ""
+    data_availability:
+      - ""
+
+# Stakeholder definitions
+stakeholders:
+  primary:
+    - role: ""
+      expertise: ""
+      need: ""
+      success_criteria: ""
+
+  secondary:
+    - role: ""
+      relationship: ""
+
+  beneficiaries:
+    - group: ""
+      expected_benefit: ""
+
+# Success metrics
+success_metrics:
+  quantitative:
+    - metric: ""
+      target: ""
+      measurement_method: ""
+
+  qualitative:
+    - indicator: ""
+      criteria: ""
+
+# Constraints
+constraints:
+  temporal: ""
+  resource: ""
+  technical: ""
+  regulatory: ""
+  organizational: ""
+
+# Example: Manufacturing AI Practitioner Education Topic
+# ======================================================
+#
+# topic:
+#   goal_statement: |
+#     Enable manufacturing domain practitioners to study AI technology
+#     and principles in 2026, apply them internally, and scale
+#     with confidence.
+#
+#   scope:
+#     included:
+#       - "Practical AI education for manufacturing professionals"
+#       - "MES-integrated AI implementation patterns"
+#       - "Scalable AI deployment in manufacturing"
+#       - "Confidence-building through pilot projects"
+#     excluded:
+#       - "Pure academic AI research without manufacturing application"
+#       - "Consumer-facing AI applications"
+#       - "Non-manufacturing industries"
+#
+#   timeline:
+#     target_completion: "2026-12-31"
+#     milestones:
+#       - date: "2026-Q1"
+#         description: "Complete practitioner training framework"
+#       - date: "2026-Q2"
+#         description: "Launch 3 pilot projects"
+#       - date: "2026-Q4"
+#         description: "Scale successful pilots to production"
+#
+#   resources:
+#     expertise:
+#       - "Image generation AI professor"
+#       - "Smart factory professor (mechanical engineering)"
+#       - "MES system manager (15+ years)"
+#     infrastructure:
+#       - "Existing MES systems"
+#       - "Production data access"
+#     budget_range: "Medium ($50K-$200K)"
+#
+#   prerequisites:
+#     systems:
+#       - "MES with data export capability"
+#       - "Basic IT infrastructure for AI workloads"
+#     knowledge:
+#       - "Manufacturing process understanding"
+#       - "Basic data literacy"
+#     data_availability:
+#       - "Production quality data"
+#       - "Equipment sensor data"
+#
+# stakeholders:
+#   primary:
+#     - role: "Image Generation AI Professor"
+#       expertise: "Generative image models, computer vision"
+#       need: "Bridge academic AI knowledge to manufacturing applications"
+#       success_criteria: "Develop practical curriculum that enables non-CS practitioners"
+#
+#     - role: "Smart Factory Professor (Mechanical Engineering)"
+#       expertise: "MES systems, factory automation"
+#       need: "Integrate AI with existing smart factory infrastructure"
+#       success_criteria: "Create integration patterns that don't disrupt production"
+#
+#     - role: "MES System Manager"
+#       expertise: "15+ years manufacturing systems"
+#       need: "Practical AI implementation within MES constraints"
+#       success_criteria: "Implement AI without major system overhaul"
+#
+#     - role: "Tech-CEO (Regional Smart Factory)"
+#       expertise: "Business strategy, regional manufacturing ecosystem"
+#       need: "Confident transition from traditional to AI-driven manufacturing"
+#       success_criteria: "ROI-positive AI implementations within 12 months"
+#
+#   secondary:
+#     - role: "Production Line Workers"
+#       relationship: "End users of AI-assisted systems"
+#
+#   beneficiaries:
+#     - group: "Manufacturing SMEs"
+#       expected_benefit: "Access to AI capabilities without hiring ML engineers"
+#
+# success_metrics:
+#   quantitative:
+#     - metric: "Internal AI pilot projects launched"
+#       target: "Minimum 3 pilots per organization"
+#       measurement_method: "Project tracking system"
+#
+#     - metric: "Practitioner confidence score"
+#       target: ">80% on post-training assessment"
+#       measurement_method: "Pre/post assessment survey"
+#
+#     - metric: "AI implementation scaling rate"
+#       target: "50% of pilots scaled to production"
+#       measurement_method: "Project outcome tracking"
+#
+#   qualitative:
+#     - indicator: "Autonomous AI problem-solving capability"
+#       criteria: "Practitioners can identify, design, and implement AI solutions independently"
+#
+# constraints:
+#   temporal: "Target completion by end of 2026"
+#   resource: "Limited internal AI expertise, requires external knowledge transfer"
+#   technical: "Must integrate with existing MES/ERP systems"
+#   regulatory: "Manufacturing quality standards, data privacy requirements"
+#   organizational: "Change management for traditional manufacturing culture"

@@ -1,0 +1,109 @@
+# Field Definition Template
+# Use this template to define the research domain/industry area
+
+field:
+  # Primary name of the field
+  name: ""
+
+  # Core technologies and tools
+  core_technologies:
+    - ""
+    - ""
+
+  # Key theoretical concepts
+  key_concepts:
+    - ""
+    - ""
+
+  # Industry maturity level
+  # Options: Emerging | Growth | Mature | Declining
+  maturity_level: ""
+
+  # Related sub-domains
+  sub_domains:
+    - name: ""
+      description: ""
+    - name: ""
+      description: ""
+
+  # Regulatory environment
+  regulatory:
+    standards:
+      - ""
+    compliance_requirements:
+      - ""
+    ethical_considerations:
+      - ""
+
+  # Key industry players
+  ecosystem:
+    research_institutions:
+      - ""
+    industry_leaders:
+      - ""
+    emerging_players:
+      - ""
+
+  # Technology readiness levels
+  technology_readiness:
+    # Scale: 1-9 (NASA TRL scale)
+    average_trl: 0
+    cutting_edge_trl: 0
+    mainstream_trl: 0
+
+# Example: Manufacturing AI Field Definition
+# ==========================================
+#
+# field:
+#   name: "Manufacturing AI"
+#
+#   core_technologies:
+#     - "Computer Vision (Defect Detection)"
+#     - "Predictive Maintenance (ML/DL)"
+#     - "Process Optimization (Reinforcement Learning)"
+#     - "Generative AI (Design Assistance)"
+#     - "Digital Twin Simulation"
+#
+#   key_concepts:
+#     - "Industry 4.0"
+#     - "Smart Factory"
+#     - "MES Integration"
+#     - "OEE Optimization"
+#     - "Predictive Quality"
+#
+#   maturity_level: "Growth"
+#
+#   sub_domains:
+#     - name: "Quality Inspection"
+#       description: "AI-powered visual and dimensional quality control"
+#     - name: "Predictive Maintenance"
+#       description: "ML-based equipment failure prediction"
+#     - name: "Process Optimization"
+#       description: "AI-driven manufacturing process parameter tuning"
+#
+#   regulatory:
+#     standards:
+#       - "ISO 9001 (Quality Management)"
+#       - "IEC 62443 (Industrial Cybersecurity)"
+#     compliance_requirements:
+#       - "Data privacy (GDPR for EU operations)"
+#       - "AI transparency requirements (emerging)"
+#     ethical_considerations:
+#       - "Worker displacement concerns"
+#       - "Algorithmic decision transparency"
+#
+#   ecosystem:
+#     research_institutions:
+#       - "Fraunhofer Institute"
+#       - "KAIST Smart Factory Research"
+#     industry_leaders:
+#       - "Siemens Digital Industries"
+#       - "Rockwell Automation"
+#     emerging_players:
+#       - "Landing AI"
+#       - "Sight Machine"
+#
+#   technology_readiness:
+#     average_trl: 6
+#     cutting_edge_trl: 4
+#     mainstream_trl: 7
