@@ -186,16 +186,44 @@ You: "What could AI do for education?"
 
 ## Installation
 
+### Method 1: Direct Install from GitHub (Recommended)
+
+```bash
+# Install directly from GitHub
+claude mcp add-json domain-research '{"type":"stdio","command":"npx","args":["github:hongsw/plugin-for-claude-research"]}'
+```
+
+### Method 2: Clone and Install Locally
+
 ```bash
 # Clone the repository
-git clone https://github.com/koreatech-ai/plugin-for-claude-research.git
+git clone https://github.com/hongsw/plugin-for-claude-research.git
 
 # Navigate to the directory
 cd plugin-for-claude-research
 
-# Install in Claude Code
-claude plugin install .
+# Add to Claude Code's allowed directories
+claude config add-dir .
+
+# Start Claude Code in this directory
+claude
 ```
+
+### Method 3: Add as Working Directory
+
+Simply add the cloned repository to your Claude Code session:
+
+```bash
+# Clone first
+git clone https://github.com/hongsw/plugin-for-claude-research.git
+
+# Then in Claude Code, add the directory
+/add-dir ~/path/to/plugin-for-claude-research
+```
+
+### Verify Installation
+
+After installation, the prompts in `skills/domain-research/prompts/` will be available as context for your research sessions.
 
 ---
 

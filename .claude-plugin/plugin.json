@@ -2,8 +2,8 @@
   "name": "claude-research-framework",
   "version": "1.0.0",
   "description": "Universal research framework that guides users from broad exploration to specific domain research through conversational intent analysis",
-  "author": "koreatech-ai",
-  "repository": "https://github.com/koreatech-ai/plugin-for-claude-research",
+  "author": "hongsw",
+  "repository": "https://github.com/hongsw/plugin-for-claude-research",
   "license": "MIT",
   "keywords": [
     "research",
