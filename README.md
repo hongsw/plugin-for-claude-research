@@ -1,5 +1,17 @@
 # Claude Research Framework
 
+> **한국어 안내**
+> 이 플러그인은 Claude Code에서 **체계적인 리서치**를 도와주는 도구입니다.
+>
+> **사용법이 간단합니다:**
+> 1. "AI로 품질검사를 개선하고 싶어" 처럼 관심사를 말하면
+> 2. 대화를 통해 연구 범위를 좁혀가고
+> 3. 5단계 파이프라인으로 실행 가능한 인사이트를 얻습니다
+>
+> 제조AI, 헬스케어, 핀테크 등 **어떤 분야든** 적용 가능합니다.
+
+---
+
 A **universal research plugin** that guides users from broad exploration to specific domain research through conversational intent analysis. Works for any field.
 
 ## Overview
