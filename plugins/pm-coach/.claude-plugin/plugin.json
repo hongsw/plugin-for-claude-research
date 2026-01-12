@@ -1,0 +1,9 @@
+{
+  "name": "pm-coach",
+  "description": "PM 코치 - 업무 소통 최적화. 요청/수신/보고 세 가지 모드로 명확한 소통 지원. 두서없는 지시를 구조화된 업무 정의서로 변환.",
+  "version": "1.0.0",
+  "author": {
+    "name": "hongsw"
+  },
+  "keywords": ["pm", "communication", "task-management", "productivity", "korean"]
+}
