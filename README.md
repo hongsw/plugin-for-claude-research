@@ -59,6 +59,30 @@ Claude: [Searches indexed documents → Returns relevant insights]
 
 ---
 
+## Screenshots
+
+### PDF Research 워크플로우
+
+<p align="center">
+  <img src="assets/screen3.png" alt="PDF Research - Status Check" width="700">
+</p>
+
+**Screen 3: PDF Research 상태 확인**
+- `/pdf-research` 명령어로 스킬 실행
+- 현재 설정 상태 확인 (PDF 디렉토리, 스토리지, 검색 모드)
+- 사용 가능한 명령어 안내 (Index, Search, Configure)
+
+<p align="center">
+  <img src="assets/screen4.png" alt="PDF Research - Indexing" width="700">
+</p>
+
+**Screen 4: PDF 인덱싱 및 검색**
+- PDF 폴더 지정 후 자동 인덱싱
+- LightRAG 기반 시맨틱 검색 실행
+- 검색 결과에서 관련 문서 내용 추출
+
+---
+
 ## Plugin Details
 
 ### 1. Domain Research
