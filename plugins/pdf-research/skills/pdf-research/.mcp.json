@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "sequential": {
+      "enabled": true,
+      "purpose": "Complex multi-step analysis and query refinement",
+      "triggers": ["research_synthesis", "multi_query_analysis", "complex_reasoning"]
+    },
+    "context7": {
+      "enabled": true,
+      "purpose": "Documentation lookup and pattern reference",
+      "triggers": ["setup_guidance", "troubleshooting", "best_practices"]
+    }
+  },
+  "toolPreferences": {
+    "indexing": ["Bash", "Read", "Write"],
+    "searching": ["Bash", "Read"],
+    "analysis": ["Sequential", "Read", "Grep"]
+  },
+  "fallbackBehavior": {
+    "sequential_unavailable": "Use native Claude reasoning",
+    "context7_unavailable": "Reference SKILL.md documentation"
+  }
+}
