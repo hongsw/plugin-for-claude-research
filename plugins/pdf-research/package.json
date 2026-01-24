@@ -1,0 +1,16 @@
+{
+  "name": "pdf-research",
+  "version": "1.0.0",
+  "description": "LightRAG-based PDF document indexing and semantic search",
+  "main": "bin/install.js",
+  "scripts": {
+    "postinstall": "node bin/install.js"
+  },
+  "keywords": ["claude-code", "plugin", "pdf", "research", "lightrag", "rag"],
+  "author": "hongsw",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongsw/plugin-for-claude-research"
+  }
+}

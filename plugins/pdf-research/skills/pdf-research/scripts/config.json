@@ -1,0 +1,7 @@
+{
+  "pdf_dir": "",
+  "storage_dir": "",
+  "auto_index": true,
+  "search_mode": "hybrid",
+  "openai_api_key_env": "OPENAI_API_KEY"
+}

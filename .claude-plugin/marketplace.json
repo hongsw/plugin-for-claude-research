@@ -15,6 +15,11 @@
       "name": "pm-coach",
       "description": "PM 코치 - 업무 소통 최적화. 요청/수신/보고 세 가지 모드로 명확한 소통 지원. 두서없는 지시를 구조화된 업무 정의서로 변환.",
       "source": "./plugins/pm-coach"
+    },
+    {
+      "name": "pdf-research",
+      "description": "LightRAG-based PDF document indexing and semantic search - index your PDF files and perform intelligent queries with knowledge graph",
+      "source": "./plugins/pdf-research"
     }
   ]
 }

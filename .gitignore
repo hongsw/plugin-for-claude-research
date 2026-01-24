@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+*.swp
+
+# Examples (local test data)
+examples/
+
+# Session state
+trees/
+
+# RAG Storage (large binary files)
+**/rag_storage/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Environment files
+.env
+.env.local
+
+# Logs
+*.log
