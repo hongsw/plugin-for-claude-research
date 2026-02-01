@@ -1,3 +1,8 @@
+---
+name: pdf-research
+description: Use when searching PDF documents with semantic queries, indexing document collections for knowledge retrieval, or when users ask questions about content in PDF files requiring context-aware answers with citations
+---
+
 # PDF Research Skill
 
 LightRAG-based PDF document indexing and semantic search for Claude Code research workflows.

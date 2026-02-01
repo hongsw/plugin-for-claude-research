@@ -1,3 +1,8 @@
+---
+name: domain-research
+description: Use when conducting systematic research in any domain (AI, healthcare, manufacturing, etc.), transforming vague interests into structured research through conversational discovery, or when users need evidence-based insights from broad exploration to actionable plans
+---
+
 # Universal Research Framework
 
 ## Core Purpose
