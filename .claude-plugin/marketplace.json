@@ -20,6 +20,11 @@
       "name": "pdf-research",
       "description": "LightRAG-based PDF document indexing and semantic search - index your PDF files and perform intelligent queries with knowledge graph",
       "source": "./plugins/pdf-research"
+    },
+    {
+      "name": "notebooklm-infographic",
+      "description": "NotebookLM을 활용한 인포그래픽 자동 생성 - 웹 검색으로 최신 정보를 수집하고, NotebookLM MCP로 전문적인 인포그래픽을 자동 생성",
+      "source": "./skills/notebooklm-infographic"
     }
   ]
 }

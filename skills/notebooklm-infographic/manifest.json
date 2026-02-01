@@ -1,0 +1,31 @@
+{
+  "name": "notebooklm-infographic",
+  "version": "1.0.0",
+  "description": "NotebookLM을 활용한 인포그래픽 자동 생성 플러그인",
+  "author": "hongsw",
+  "repository": "https://github.com/hongsw/korea_tech_ai_ppts",
+  "skills": [
+    {
+      "name": "notebooklm-infographic",
+      "description": "NotebookLM MCP를 활용하여 주제에 대한 전문적인 인포그래픽을 자동으로 생성합니다.",
+      "command": "/infographic",
+      "aliases": ["/ig", "/notebook-infographic"],
+      "promptFile": "prompt.md",
+      "tags": ["notebooklm", "infographic", "automation", "visualization", "mcp"],
+      "examples": [
+        {
+          "command": "/infographic \"한국 주식 투자 2026\"",
+          "description": "한국 주식 투자 가이드 인포그래픽 생성"
+        },
+        {
+          "command": "/ig \"AI 기술 트렌드\" --audience=\"개발자\"",
+          "description": "개발자 대상 AI 트렌드 인포그래픽"
+        },
+        {
+          "command": "/notebook-infographic \"전기차 시장\" --language=\"en\"",
+          "description": "영문 전기차 시장 인포그래픽"
+        }
+      ]
+    }
+  ]
+}
