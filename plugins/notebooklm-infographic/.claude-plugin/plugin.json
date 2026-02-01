@@ -1,0 +1,13 @@
+{
+  "name": "notebooklm-infographic",
+  "version": "1.0.0",
+  "description": "NotebookLM을 활용한 인포그래픽 자동 생성 - 웹 검색부터 시각화까지 완전 자동화",
+  "author": {
+    "name": "hongsw",
+    "url": "https://github.com/hongsw"
+  },
+  "repository": "https://github.com/hongsw/plugin-for-claude-research",
+  "license": "MIT",
+  "keywords": ["notebooklm", "infographic", "automation", "visualization", "mcp", "research"],
+  "skills": "./skills/notebooklm-infographic"
+}
