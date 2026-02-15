@@ -270,3 +270,5 @@ MIT License - see LICENSE file for details.
 
 - Inspired by [plugins-for-claude-natives](https://github.com/team-attention/plugins-for-claude-natives/)
 - PDF search powered by [LightRAG](https://github.com/HKUDS/LightRAG)
+- **self-learning** skill is based on [ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) curriculum by **AI Native Camp / Koomook** ([@Koomook](https://github.com/Koomook))
+- Design philosophy: Conversational discovery for any domain

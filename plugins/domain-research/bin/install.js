@@ -115,6 +115,7 @@ function install() {
 ║    • Block 0-6: Claude Code 핵심 기능 학습                  ║
 ║    • STOP 프로토콜 기반 인터랙티브 학습                       ║
 ║    • 스킬 만들기 실습 포함                                   ║
+║    • Based on ai-native-camp/camp-1 by @Koomook            ║
 ║                                                            ║
 ║  🚀 Quick Start:                                           ║
 ║    /research  → "I want to research [topic]"               ║

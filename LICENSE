@@ -2,6 +2,11 @@ MIT License
 
 Copyright (c) 2025 koreatech-ai
 
+Portions of this software (self-learning skill) are derived from:
+  ai-native-camp/camp-1 (https://github.com/ai-native-camp/camp-1)
+  Copyright (c) 2026 AI Native Camp / Koomook
+  Licensed under their respective terms.
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

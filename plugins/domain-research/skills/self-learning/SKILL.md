@@ -5,6 +5,10 @@ description: Claude Code 자기주도 학습 스킬. "/self-learning", "/learn",
 
 # Self-Learning Skill — Claude Code 자기주도 학습
 
+> **Original Work Credit**
+> 이 스킬은 [ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) 커리큘럼을 기반으로 제작되었습니다.
+> 원저작자: **AI Native Camp / Koomook** ([@Koomook](https://github.com/Koomook))
+
 ## Core Purpose
 
 사용자가 Claude Code의 핵심 기능을 **스스로 학습**할 수 있도록 돕는 인터랙티브 학습 프레임워크입니다.
