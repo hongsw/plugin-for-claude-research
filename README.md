@@ -9,6 +9,7 @@
 >
 > **포함된 플러그인:**
 > - **domain-research**: 대화형 리서치 파이프라인 (어떤 분야든 적용 가능)
+> - **self-learning**: Claude Code 자기주도 학습 ([ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) 기반)
 > - **pdf-research**: PDF 문서 인덱싱 및 시맨틱 검색 (LightRAG 기반)
 > - **pm-coach**: PM 업무 소통 최적화
 
@@ -21,6 +22,7 @@ A collection of **research plugins** for Claude Code that help you conduct syste
 | Plugin | Description | Use Case |
 |--------|-------------|----------|
 | **domain-research** | 5-step research pipeline with conversational intent analysis | Any domain research |
+| **self-learning** | Interactive Claude Code learning based on [ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) | Self-paced learning |
 | **pdf-research** | LightRAG-based PDF indexing and semantic search | Document analysis |
 | **pm-coach** | PM communication optimization (Korean) | Task communication |
 
@@ -36,6 +38,7 @@ A collection of **research plugins** for Claude Code that help you conduct syste
 
 # Install plugins
 /plugin install domain-research
+/plugin install self-learning
 /plugin install pdf-research
 /plugin install pm-coach
 ```
@@ -46,6 +49,15 @@ A collection of **research plugins** for Claude Code that help you conduct syste
 ```
 You: "I'm interested in AI for healthcare"
 Claude: [Conversational discovery → Research context → 5-step pipeline]
+```
+
+**Self-Learning:**
+```
+You: /self-learning
+Claude: [Block 0부터 시작 → 환경설정 → 체험 → 7대 핵심기능 학습 → 스킬 만들기 실습]
+
+You: /learn block3
+Claude: [7대 핵심 기능 블록으로 바로 이동 → CLAUDE.md, Skill, MCP, Subagent, ...]
 ```
 
 **PDF Research:**
@@ -102,7 +114,37 @@ Universal research framework that guides users from broad exploration to specifi
 4. Multi-Source Synthesis
 5. Practical Application
 
-### 2. PDF Research
+### 2. Self-Learning
+
+> Based on [ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) by **AI Native Camp / Koomook** ([@Koomook](https://github.com/Koomook))
+
+Interactive self-paced learning for Claude Code's core features using the STOP protocol.
+
+**STOP Protocol (2-Phase Learning):**
+- **Phase A**: Concept explanation + hands-on practice + STOP (no quiz yet)
+- **Phase B**: Quiz via AskUserQuestion + feedback + next block
+
+**Learning Blocks:**
+
+| Block | Topic | Content |
+|-------|-------|---------|
+| 0 | Setup | Claude Code installation and initial configuration |
+| 1 | Experience | 3 demos to feel the potential of Claude Code |
+| 2 | Why CLI? | Understanding why terminal-based AI matters |
+| 3 | 7 Core Features | CLAUDE.md, Skill, MCP, Subagent, Agent Teams, Hook, Plugin |
+| 4 | Basics | CLI, Git, GitHub, Editor fundamentals |
+| 5 | Create a Skill | Hands-on skill creation practice |
+| 6 | Research Integration | Combining learning with domain-research skill |
+
+**Commands:**
+```bash
+/self-learning          # Start from the beginning
+/learn block3           # Jump to a specific block
+/learn skill            # Skill creation practice
+/learn research         # Research integration
+```
+
+### 3. PDF Research
 
 LightRAG-based semantic search over PDF documents.
 
@@ -132,7 +174,7 @@ python pdf_research.py status
 - OpenAI API key
 - Dependencies: `lightrag-hku[api]`, `pymupdf`, `python-dotenv`
 
-### 3. PM Coach
+### 4. PM Coach
 
 PM communication optimizer for Korean users.
 
@@ -152,10 +194,15 @@ plugin-for-claude-research/
 │   └── marketplace.json         # Plugin registry
 ├── plugins/
 │   ├── domain-research/         # Research pipeline plugin
-│   │   ├── skills/domain-research/
-│   │   │   ├── SKILL.md
-│   │   │   └── prompts/
+│   │   ├── skills/
+│   │   │   ├── domain-research/ # Research prompts
+│   │   │   └── self-learning/   # Learning skill (camp-1 based)
 │   │   └── bin/install.js
+│   ├── self-learning/           # Self-learning plugin
+│   │   └── skills/self-learning/
+│   │       ├── SKILL.md         # STOP protocol definition
+│   │       ├── prompts/         # 7 learning blocks
+│   │       └── references/      # 13 reference materials
 │   ├── pdf-research/            # PDF semantic search plugin
 │   │   ├── skills/pdf-research/
 │   │   │   ├── SKILL.md
