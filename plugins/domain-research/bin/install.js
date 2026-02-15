@@ -5,7 +5,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const PLUGIN_NAME = 'domain-research';
-const SKILL_NAME = 'domain-research';
+const SKILL_NAMES = ['domain-research', 'self-learning'];
 
 // Detect available CLIs
 function detectCLIs() {
@@ -69,28 +69,30 @@ function install() {
 
   console.log(`📍 Detected CLIs: ${clis.join(', ')}`);
 
-  const sourceSkillDir = path.join(__dirname, '..', 'skills', SKILL_NAME);
+  for (const skillName of SKILL_NAMES) {
+    const sourceSkillDir = path.join(__dirname, '..', 'skills', skillName);
 
-  if (!fs.existsSync(sourceSkillDir)) {
-    console.error(`❌ Source skill directory not found: ${sourceSkillDir}`);
-    process.exit(1);
-  }
-
-  for (const cli of clis) {
-    const cliHome = getCliHome(cli);
-    const targetSkillDir = path.join(cliHome, 'skills', SKILL_NAME);
-
-    console.log(`\n📦 Installing to ${cli}...`);
-
-    // Create skills directory if it doesn't exist
-    if (!fs.existsSync(path.join(cliHome, 'skills'))) {
-      fs.mkdirSync(path.join(cliHome, 'skills'), { recursive: true });
+    if (!fs.existsSync(sourceSkillDir)) {
+      console.log(`⚠️  Skill directory not found: ${sourceSkillDir} (skipping)`);
+      continue;
     }
 
-    // Copy skill files
-    copyDir(sourceSkillDir, targetSkillDir);
+    for (const cli of clis) {
+      const cliHome = getCliHome(cli);
+      const targetSkillDir = path.join(cliHome, 'skills', skillName);
 
-    console.log(`   ✅ Installed skill to: ${targetSkillDir}`);
+      console.log(`\n📦 Installing ${skillName} to ${cli}...`);
+
+      // Create skills directory if it doesn't exist
+      if (!fs.existsSync(path.join(cliHome, 'skills'))) {
+        fs.mkdirSync(path.join(cliHome, 'skills'), { recursive: true });
+      }
+
+      // Copy skill files
+      copyDir(sourceSkillDir, targetSkillDir);
+
+      console.log(`   ✅ Installed skill to: ${targetSkillDir}`);
+    }
   }
 
   console.log(`
@@ -98,7 +100,9 @@ function install() {
 ║  🎉 ${PLUGIN_NAME} installed successfully!                 ║
 ╠════════════════════════════════════════════════════════════╣
 ║                                                            ║
-║  📚 Available Prompts:                                     ║
+║  📚 Available Skills:                                      ║
+║                                                            ║
+║  1. domain-research (리서치 파이프라인)                      ║
 ║    • intent-analyzer.md   - Conversational discovery       ║
 ║    • key-questions.md     - Research question generation   ║
 ║    • research-gaps.md     - Gap identification             ║
@@ -107,10 +111,14 @@ function install() {
 ║    • practical-application.md - Action planning            ║
 ║    • comprehensive-guide.md - Final roadmap                ║
 ║                                                            ║
+║  2. self-learning (자기주도 학습)                            ║
+║    • Block 0-6: Claude Code 핵심 기능 학습                  ║
+║    • STOP 프로토콜 기반 인터랙티브 학습                       ║
+║    • 스킬 만들기 실습 포함                                   ║
+║                                                            ║
 ║  🚀 Quick Start:                                           ║
-║    1. Start claude in any project directory                ║
-║    2. Say: "I want to research [your topic]"               ║
-║    3. Follow the conversational flow                       ║
+║    /research  → "I want to research [topic]"               ║
+║    /self-learning → Claude Code 학습 시작                   ║
 ║                                                            ║
 ╚════════════════════════════════════════════════════════════╝
 `);

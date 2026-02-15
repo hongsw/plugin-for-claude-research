@@ -14,5 +14,5 @@
     "intent-analysis",
     "domain-agnostic"
   ],
-  "skills": "./skills/domain-research"
+  "skills": ["./skills/domain-research", "./skills/self-learning"]
 }
