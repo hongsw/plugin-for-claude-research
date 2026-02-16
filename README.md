@@ -118,7 +118,11 @@ Universal research framework that guides users from broad exploration to specifi
 
 > Based on [ai-native-camp/camp-1](https://github.com/ai-native-camp/camp-1) by **AI Native Camp / Koomook** ([@Koomook](https://github.com/Koomook))
 
-Interactive self-paced learning for Claude Code's core features using the STOP protocol.
+Interactive self-paced learning for Claude Code's core features using **Evolution-Gated Learning (EGL)**.
+
+**EGL — Evolution-Gated Learning (진화 게이트 학습법):**
+A novel AI-native pedagogy where a real project's architecture evolution becomes the curriculum,
+with mandatory gates (STOP protocol) between each evolution stage, and the tool teaches about itself recursively.
 
 **STOP Protocol (2-Phase Learning):**
 - **Phase A**: Concept explanation + hands-on practice + STOP (no quiz yet)
