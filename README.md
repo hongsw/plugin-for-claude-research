@@ -124,17 +124,24 @@ Interactive self-paced learning for Claude Code's core features using the STOP p
 - **Phase A**: Concept explanation + hands-on practice + STOP (no quiz yet)
 - **Phase B**: Quiz via AskUserQuestion + feedback + next block
 
+**Evolution Narrative (Minecraft Metaphor):**
+```
+🏠 Dirt House → ⛏️ Stone → 🗡️ Bronze → ⚔️ Iron → 💎 Diamond → 🟣 Netherite → 🌐 Meta
+bash          if/else   multi-bot   specialize  LLM       RAG+Memory    Observer
+Block 0       Block 1-2   Block 3    Block 3    Block 5    Block 6      Post-grad
+```
+
 **Learning Blocks:**
 
-| Block | Topic | Content |
-|-------|-------|---------|
-| 0 | Setup | Claude Code installation and initial configuration |
-| 1 | Experience | 3 demos to feel the potential of Claude Code |
-| 2 | Why CLI? | Understanding why terminal-based AI matters |
-| 3 | 7 Core Features | CLAUDE.md, Skill, MCP, Subagent, Agent Teams, Hook, Plugin |
-| 4 | Basics | CLI, Git, GitHub, Editor fundamentals |
-| 5 | Create a Skill | Hands-on skill creation practice |
-| 6 | Research Integration | Combining learning with domain-research skill |
+| Block | Era | Topic | Content |
+|-------|-----|-------|---------|
+| 0 | 🏠 Dirt House | Setup | Claude Code installation and initial configuration |
+| 1 | ⛏️ Stone Age | Experience | Demos + Agentic Engineer evolution overview |
+| 2 | ⛏️ Stone Age | Why CLI? | Understanding why terminal-based AI matters |
+| 3 | 🗡️⚔️ Bronze~Iron | 7 Core Features | Agent division, domain specialization, automation |
+| 4 | — | Basics | CLI, Git, GitHub, Editor fundamentals |
+| 5 | 💎 Diamond | Create a Skill | LLM-driven skill creation — prompt = behavior |
+| 6 | 🟣 Netherite | Research Integration | RAG-based knowledge externalization + learning |
 
 **Commands:**
 ```bash

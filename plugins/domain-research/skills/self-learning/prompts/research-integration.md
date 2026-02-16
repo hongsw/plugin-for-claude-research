@@ -1,18 +1,30 @@
-# Block 6: 리서치와 학습의 결합
+# Block 6: 🟣 네더라이트시대 — 리서치와 학습의 결합
 
 ## 목표
 self-learning 스킬과 domain-research 스킬을 결합하여 자기주도 심화 학습 방법을 익힙니다.
+
+> **진화 위치**: 다이아몬드시대(Skill 제작)까지 왔다면, 이제 **네더라이트시대**입니다.
+> 네더라이트시대 = **RAG(지식 검색) + 경험 메모리**를 결합하는 단계.
+> 마인크래프트에서 `knowledge.json`과 `memory.jsonl`로 봇이 학습했듯이,
+> Claude Code에서는 **domain-research 스킬로 지식을 외부화하고 학습에 결합**합니다.
+
+참조: `references/evolution-chronicle.md` — 시대 6(네더라이트)의 실제 사례
 
 ## 실행 프로토콜
 
 ### Phase A (설명 + 실습)
 
 참조 파일 `references/block6-research-integration.md`를 읽으세요.
+참조 파일 `references/evolution-chronicle.md`의 네더라이트시대 섹션도 읽으세요.
 
-#### 학습의 다음 단계: 리서치
+#### 학습의 다음 단계: 리서치 — 지식 외부화
 
 지금까지 Claude Code의 기본 기능을 학습했습니다.
 이제 이 도구를 활용해서 **실제 주제를 깊이 연구**하는 방법을 배웁니다.
+
+> 마인크래프트 봇이 `knowledge.json`(레시피, 아이템, 블록 정보)을 외부 파일로 분리했듯이,
+> 우리도 연구 결과를 외부 문서로 정리하고 Claude Code가 참조할 수 있게 합니다.
+> 이것이 **RAG 패턴의 핵심**: 코드 수정 없이 지식만 추가하면 확장됩니다.
 
 #### domain-research 스킬 소개
 
@@ -74,23 +86,28 @@ AskUserQuestion으로 최종 확인:
 
 → 정답 없음. 어떤 선택이든 의미를 설명.
 
-#### 학습 완료 정리
+#### 에이전틱 엔지니어 진화 완료 체크
 
 ```
-✅ Block 0: 환경 설정 완료
-✅ Block 1: Claude Code 체험
-✅ Block 2: CLI의 필요성 이해
-✅ Block 3: 7대 핵심 기능 학습
-✅ Block 4: CLI/Git/GitHub 기초
-✅ Block 5: 나만의 Skill 제작
-✅ Block 6: 리서치 결합 학습
+🏠 흙집      → Block 0: 환경 설정 완료
+⛏️ 석기      → Block 1-2: 체험 + CLI 이해
+🗡️ 청동기    → Block 3: 에이전트 분업 (Subagent, Agent Teams)
+⚔️ 철기      → Block 3: 도메인 특화 (Hook, MCP)
+💎 다이아    → Block 5: LLM 기반 Skill 제작
+🟣 네더라이트 → Block 6: RAG + 리서치 결합  ← 지금 여기!
+🌐 메타      → 졸업 후: Plugin 배포, 팀 공유, 시스템 관찰
 ```
 
-#### 다음 단계 안내
+#### 다음 단계 — 메타시대로
 
-1. **자신만의 Skill 확장**: 업무에 필요한 스킬을 계속 만들어보세요
-2. **MCP 서버 연동**: 팀에서 사용하는 도구를 MCP로 연결하세요
-3. **Plugin 제작**: 스킬을 Plugin으로 묶어 팀에 공유하세요
-4. **커뮤니티 참여**: [AI Native Camp](https://github.com/ai-native-camp)에서 다른 학습자들과 교류하세요
+네더라이트시대를 졸업하면 **메타시대**에 진입합니다:
 
-"학습은 끝이 아니라 시작입니다. Claude Code와 함께 계속 성장하세요."
+1. **Plugin 제작/배포**: 스킬을 Plugin으로 묶어 팀에 공유하세요
+2. **시스템 관찰**: Hook + Agent Teams를 결합한 모니터링/자동화
+3. **커뮤니티 참여**: [AI Native Camp](https://github.com/ai-native-camp)에서 다른 학습자들과 교류하세요
+4. **자신만의 진화**: 업무에 필요한 스킬을 계속 만들고 확장하세요
+
+> 마인크래프트의 메타시대가 `daily_chronicle.js`로 봇을 관찰하고 서사를 기록했듯이,
+> 당신도 시스템 전체를 관찰하고 팀과 공유하는 단계로 나아갑니다.
+
+"흙집에서 네더라이트까지 — 당신의 에이전틱 엔지니어 진화가 완료되었습니다. 이제 메타시대로!"
